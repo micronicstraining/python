@@ -39,3 +39,5 @@ $ pycharm
 
 In your outter terminal:
 $ vagrant halt
+
+If you have questions, need help setting up or find a mistake please contact me: avakyan@gmail.com
