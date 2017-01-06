@@ -25,7 +25,7 @@ $ vagrant up
 
 Give it some time as it installs the necessary tools.
 
-Look at envsetup.sh for details on what is being installed in case you would prefer working with your local machine instead of a VM.
+Look at envsetup.sh for details on what is being installed in case you would prefer setting up your local machine instead of a VM.  The script has been written and tested only for Ubuntu.
 
 5) Login to VM:
 
