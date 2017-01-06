@@ -50,4 +50,4 @@ sync for quite a while.
 In your outter terminal:
 $ vagrant halt
 
-If you have questions, need help setting up or find a mistake please contact me: avakyan@gmail.com
+If you have questions, need help setting up or find a mistake please contact me: tigrana@micronicstraining.com
