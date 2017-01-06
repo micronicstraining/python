@@ -39,7 +39,11 @@ Password: vagrant
 Inside the VM terminal:
 $ pycharm
 
-8) Close pycharm.
+Create a new project and wait for everything to initialize and sync.
+If you look at the bottom status bar in the PyCharm window it may
+sync for quite a while.
+
+8) Close pycharm once everything syncs.
 
 9) Stop the VM via vagrant command.
 
