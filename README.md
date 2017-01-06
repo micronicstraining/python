@@ -9,17 +9,23 @@ Environment setup
 
 2) On this page click "clone or download" and download zip
 
-3) Extract the zip file into a folder which will host your VM
+3) Extract the zip file and go to envsetup folder
 
 $ unzip python-master.zip
+
 $ cd python-master
+
 $ cd envsetup
+
+You need to be in the same directory as Vagrantfile.
 
 4) Provision the VM with vagrant
 
 $ vagrant up
 
 Give it some time as it installs the necessary tools.
+
+Look at envsetup.sh for details on what is being installed in case you would prefer working with your local machine instead of a VM.
 
 5) Login to VM:
 
