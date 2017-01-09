@@ -8,7 +8,17 @@ Guide:
 
 3) get process id 
 
+you can use 
+
+$ pidof python3
+
 4) go to pid in /proc folder
 
 5) use 'cat' utility to output status
+
+Is there a better way?
+
+Read the following:
+
+http://unix.stackexchange.com/questions/151510/find-out-the-memory-allocated-for-a-particular-process-in-ubuntu
 
