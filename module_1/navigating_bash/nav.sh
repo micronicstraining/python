@@ -30,4 +30,4 @@ grep -R 'usr/local/bin'
 # lab install zsh
 
 # lab install zonsh
-
+# skip wizard
