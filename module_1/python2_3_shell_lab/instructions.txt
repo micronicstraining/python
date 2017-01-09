@@ -1,0 +1,14 @@
+How much virtual memory does the python 2 vs python 3 shell use?
+
+Guide:
+
+1) start shell process
+
+2) open another terminal window
+
+3) get process id 
+
+4) go to pid in /proc folder
+
+5) use 'cat' utility to output status
+
