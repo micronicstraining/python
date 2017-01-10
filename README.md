@@ -34,18 +34,21 @@ Password: vagrant
 
 6) Open terminal by clicking top left icon and typing terminal.
 
-7) Open pycharm to ensure it installed
+7) Go to pycharm directory and clone this repo
+
+$ cd PycharmProjects
+$ git clone https://github.com/micronicstraining/python
+
+8) Open pycharm from terminal
 
 Inside the VM terminal:
 $ pycharm
 
-Create a new project and wait for everything to initialize and sync.
-If you look at the bottom status bar in the PyCharm window it may
-sync for quite a while.
+9) Open the micronicstraining/python project and let PyCharm sync
 
-8) Close pycharm once everything syncs.
+10) Close pycharm once everything syncs.
 
-9) Stop the VM via vagrant command.
+11) Stop the VM via vagrant command.
 
 In your outter terminal:
 $ vagrant halt
