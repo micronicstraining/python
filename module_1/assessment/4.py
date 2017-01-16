@@ -8,3 +8,8 @@ print(a+b)
 
 # Is there another change we can make?
 # Hint: The original values of a and b alone can be left alone
+
+
+# casting polymorphism stuff here
+# duck typing, tuple is polymorphic, list, non uniform elements compared to array
+# or string
