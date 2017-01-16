@@ -8,6 +8,11 @@ letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
 # How can we output the 5th letter?
 
 
+# In order to get the number of elements in a list you can use len
+# ie length = len(letters) 
+# will make length == 10
+
+
 # Name some possible motivations for writing the following line of code
 # Is there an error or mistake? 
 letters[len(letters)]
@@ -16,15 +21,21 @@ letters[len(letters)]
 
 
 # Is there another more idiomatic way to output the last letter?
+# Hint what happens when you put a negative number as the index?
 
-
-# What will the following code do
+# What will the following code do?
+# What does append mean? 
 i = len(letters)
 letters.append('k')
 print(letters[i])
 
-# What does this output?
+# Slicing gives a subset of a list can be done as follows:
+# letters[lower_element, upper_element_excluded]
+# The following is an example of slicing an array.  What does it output?
 letters[0:3]
+
+# What if we omit the first index?  What does this output?
+letters[:3]
 
 # What does it mean to say that slicing is upper-bound exclusive and lower-bound inclusive?
 
@@ -32,11 +43,20 @@ letters[0:3]
 # How can we output a slice of all but the outtermost letters?
 
 
+# The complete syntax of list slicing is [start:end:step] . 
+# When you don't pass a step, Python assumes the step is 1.
+# [:]  itself means get everything from start to end. 
+# [::2]  means get everything from start to end at a step of two
+# How would you get every 3rd element starting from the 2nd and going
+# all the way to, but not including, the second to last element?
+# Hint: the output should be ['b', 'e', 'h']
+
+
 # How can we output a slice of the last 3 letters?
+# Hint: # when you don't put index to the right of the colon what happens?
 
-
-# What does the following do?
-letters[0:-1:2]
+# Is the following statement true? Why or why not?
+letters[0:-1:2] == letters[::2]
 
 
 # How do you access all the odd elements in letters?
