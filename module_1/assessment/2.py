@@ -1,10 +1,10 @@
-# What will happen in the following script
+# Syntax example What will happen in the following script
 a = 1
 _a = 2
 _a2 = 3
 2a = 4
 
-# add more examples of array access
+# List example add more examples of array access
 
 # what is the difference in types?
 type([0])
@@ -24,3 +24,7 @@ a[1]
 
 
 #slice object
+
+# Tuple example
+
+# String example
