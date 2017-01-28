@@ -1,4 +1,4 @@
-
+# go over tut. here 1st
 # http://www.pythonforbeginners.com/files/reading-and-writing-files-in-python
 
 f = open("input.txt", "r")   # here we open file "input.txt". Second argument used to identify that we want to read file
