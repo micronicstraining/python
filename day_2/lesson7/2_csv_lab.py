@@ -1,3 +1,5 @@
+#! /usr/bin/env python3
+#
 # Lab instructions - Finish this script according to the following instructions
 #
 # Step 1
@@ -17,8 +19,9 @@
 #    Note: use CSV writer.  Go to https://docs.python.org/3/library/csv.html and read how to use it.
 # 2) Save the CSV file and verify the column is present in the new file
 
+# Step 3
+# Is there a way to clean up the exception handling?
 
-#! /usr/bin/env python3
 import sys
 import csv
 from geopy.geocoders import Nominatim
@@ -29,17 +32,8 @@ DELIMITER = ','
 
 def main():
     with open(FILE_NAME, newline='') as csv_file:
-        geolocator = Nominatim()
-        csv_reader = csv.reader(csv_file, delimiter=DELIMITER)
-        for row in csv_reader:
-            # Note: there is a slightly better way to do the unpacking here.
-            # Can you think of a better type of tuple to use?
-            policy_id, *_, point_latitude, point_longitude, line, construction, point_granularity = row
-            print(policy_id, point_latitude, point_longitude)
-            try:
-                print(geolocator.reverse(point_latitude + ', ' + point_longitude))
-            except:
-                print("Unable to get reverse coordinates")
+        # write code here
+        pass
 
     return 0
 

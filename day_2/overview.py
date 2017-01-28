@@ -40,7 +40,8 @@ int_neg_5 = -5
 
 # strings
 # collections
-# sequences  &  nonsequence
+# sequences  &  non-sequence (ordered?)
+# immutable vs mutable?
 print('This is a sentence in unicode! ' + 'I ❤ Unicode')
 
 x = 'This is a sentence.  This is another sentence'
@@ -126,6 +127,13 @@ for index, letter in enumerate(l2):
 # lists - mutable
 []
 
+# problems with mutability
+a = [1,2,3]
+b = a
+a.append(4)
+# now b is also 1,2,3,4!
+# How can we copy the list a to b ?
+
 # tuples - immutable
 ()
 
@@ -143,4 +151,14 @@ print(dict1['hello'])
 print(dict1['goodbye'])
 print(dict1['test'])
 
+a = dict(one=1, two=2, three=3)
+
+b = {'one': 1, 'two': 2, 'three': 3}
+
+c = dict(zip(['one', 'two', 'three'], [1, 2, 3]))
+
+d = dict([('two', 2), ('one', 1), ('three', 3)])
+
+# should be true
+assert (a == b == c == d)
 

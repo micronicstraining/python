@@ -13,6 +13,8 @@ def main():
         geo_locator = Nominatim()
         csv_reader = csv.reader(csv_file, delimiter=DELIMITER)
         for row in csv_reader:
+            # is this a better way of unpacking you can think of?
+            # Perhaps using a better data structure than just a tuple?
             policy_id, *_, point_latitude, point_longitude, line, construction, point_granularity = row
             print(policy_id, point_latitude, point_longitude)
             try:
