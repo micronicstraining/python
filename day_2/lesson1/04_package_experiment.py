@@ -5,10 +5,14 @@
 # Does the side-effect occur once or twice?
 import sys
 
-if __name__ == '__main__':
-    print('Hello from 04_package_experiment')
-    print('These are the imported modules: ')
-    print(sys.modules.keys())
+# if __name__ == '__main__':
+#     print('Hello from 04_package_experiment')
+#     print('These are the imported modules: ')
+#     print(len(sys.modules.keys()))
+#     print('module_with_side_effect' in sys.modules.keys())
+#     import module_with_side_effect
+#     print(len(sys.modules.keys()))
+#     print('module_with_side_effect' in sys.modules.keys())
 
 
 # See:
@@ -16,8 +20,8 @@ if __name__ == '__main__':
 # basically after import module is like a singleton
 
 # my example:
-# from package_with_side_effect_2 import mod_1
-# from package_with_side_effect_2 import mod_2
-#
-# if __name__ == '__main__':
-#     print('hi')
+from package_with_side_effect_2 import mod_1
+from package_with_side_effect_2 import mod_2
+
+if __name__ == '__main__':
+    print('hi')

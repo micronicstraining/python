@@ -18,39 +18,43 @@ INVALID_INPUT = 1
 DIV_BY_ZERO_EXIT = 2
 INVALID_INPUT_NAN = 3
 INVALID_INPUT_INF = 4
-
+INVALID_NUMBER_OF_INPUTS = 5
 
 def main(args):
     # unpack the tuple
-    # num, den = ?
+    num, den = args
     try:
         # cast to floating point
-        # num, den = ?, ?
+        num, den = float(num), float(den)
     # what type of exception if cast doesn't work?
     # ie try float('a') in our python3 shell
-    except ? as e:
+    except ValueError as e:
         # is this an error or a warning?
-        logging.?('Invalid input')
-        return ?
+        logging.error('Invalid input. Could not convert input to decimal')
+        return INVALID_INPUT
 
-    # if denmonitor is zero
-    if ? == ?:
+    # if denominator is equal zero
+    if den == 0:
         # is this a warning or error?
-        logging.?('Invalid denominator input!')
-        return ?
+        logging.warning('Invalid denominator input!')
+        return DIV_BY_ZERO_EXIT
 
     # if numerator or denominator is nan?
-    if ?:
-        return ?
+    if math.isnan(den) or math.isnan(num):
+        logging.warning('Nan in den or num')
+        return INVALID_INPUT_NAN
 
     # if numerator or denominator is inf?
-    if ?:
-        return ?
+    if math.isinf(den) or math.isinf(num):
+        logging.warn(('Inf input in den or num'))
+        return INVALID_INPUT_INF
 
     print('Answer: ' + str(num / den))
     return 0
 
 
 if __name__ == '__main__':
+    status = INVALID_NUMBER_OF_INPUTS
     if len(sys.argv) == 3:
-        main(sys.argv[1:])
+        status = main(sys.argv[1:])
+    sys.exit(status)

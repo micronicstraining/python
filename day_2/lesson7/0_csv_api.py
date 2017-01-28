@@ -20,6 +20,7 @@ def csv_writer_write_a_row(mode='w'):
         age = input('Input age:')
         writer.writerow([first_name, last_name, age])
 
+    f.close()
 
 if __name__ == '__main__':
     csv_writer_write_a_row()

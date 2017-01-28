@@ -15,8 +15,9 @@ second_to_last_elem = l[-2]
 
 # 1.03 (*) Find the K'th element of a list.
 def kth_elem(k, l):
-    return l[k]
-
+    if k < len(l):
+        return l[k]
+    return None
 
 # 1.04 (*) Find the number of elements of a list.
 num_elements = len(l)

@@ -7,29 +7,30 @@ MEM_INFO_DELIM = ':'
 
 def main(args):
     mem_dict = dict()
-    # Buil mem_dict from file
+    # Build mem_dict from file
     with open(MEM_INFO_FILE) as f:
         for line in f.readlines():
             try:
                 # get the key and value
-                # (ie 'SwapFree:    1048752 KB' should be unpacked)
+                k, v = line.split(MEM_INFO_DELIM)
+                k = k.strip()
+                # Split between number and KB and keep only number
+                v = v.strip().split(' ')[0]
 
-                # fill in this line
-
-                # cleanup (strip) whitespaces and remove KB (only keep numbers)
-
-                # fill in this line
+                # insert into dictionary
+                mem_dict[k] = v
             except:
                 print('Could not read line' + line)
 
+    # print(mem_dict)
     sum_kb = 0
-    for arg in args:
+    for input_key in args:
         try:
-            sum_kb += int(mem_dict[arg])
+            sum_kb += int(mem_dict[input_key])
         except:
-            print('Unable to get value for arg' + arg)
+            print('Unable to get value for arg' + input_key)
 
-    print('Total is ' + int(sum_kb))
+    print('Total is ' + str(sum_kb))
 
 
 if __name__ == '__main__':

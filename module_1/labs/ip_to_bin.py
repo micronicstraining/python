@@ -3,14 +3,23 @@ import sys
 
 
 def main(ip_address):
-    pass
+
     # split ip address to octets
+    octets = ip_address.split('.')
 
     # Ensure we have 4 octets
+    if len(octets) != 4:
+        return
 
     # Try to print the octets in binary format
     # Use a loop iterating through octets and printing
     # their binary values
+    try:
+        for octet in octets:
+            print(bin(int(octet)))
+    except ValueError:
+        print('Value error!  Unable to convert octet string to integer')
+
 
 
 if __name__ == '__main__':

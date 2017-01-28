@@ -91,16 +91,25 @@ c /= b
 # What is 5 ** 3?
 # What does the **= operator do?
 
+input_y = 15
+
 # can you say what the output of the followin function will be
 # given that only integer inputs
 def some_function(input_x):
+    input_y = 20
     return input_x ** input_x
 
+def my_adder(x, y, z):
+    return x + y + z
+
+def average(my_list):
+    return sum(my_list)/len(average)
 
 # what will be the output of the following given integer inputs
 def zero_identity(x):
     return x * 0
 
+some_function(5)
 
 # what if we pass in floating points?  Is it possible to get a non-zero output?
 # replace the 0 with something to get a non-zero result

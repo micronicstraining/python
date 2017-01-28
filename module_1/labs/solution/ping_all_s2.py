@@ -11,8 +11,8 @@ def ping(url, count):
 def main(args):
     parser = argparse.ArgumentParser(description='Ping URLs with count param.')
 
+    parser.add_argument('--count', default=1, type=int, help='Set count of pings')
     parser.add_argument('--urls', type=str, nargs='+', help='list of URLs')
-    parser.add_argument('--count', default=1, help='Set count of pings')
 
     args = parser.parse_args(args)
     for url in args.urls:
@@ -20,4 +20,5 @@ def main(args):
 
 
 if __name__ == '__main__':
+    input(' ')
     main(sys.argv[1:])
