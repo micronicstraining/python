@@ -13,9 +13,12 @@ def main(args):
             try:
                 # get the key and value
                 # (ie 'SwapFree:    1048752 KB' should be unpacked)
-                k, v = line.split(MEM_INFO_DELIM)
+
+                # fill in this line
+
                 # cleanup (strip) whitespaces and remove KB (only keep numbers)
-                mem_dict[k] = v.strip().split(' ')[0]
+
+                # fill in this line
             except:
                 print('Could not read line' + line)
 
@@ -32,3 +35,10 @@ def main(args):
 if __name__ == '__main__':
     if len(sys.argv) > 1:
         main(sys.argv[1:])
+
+
+# usage
+# python3 proc_mem.py WritebackTmp CommitLimit
+# Total is 272342
+
+# Likely bugs in this implementation!  Just for a rough idea
