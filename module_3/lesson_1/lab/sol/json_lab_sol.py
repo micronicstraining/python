@@ -19,8 +19,7 @@ def avg_sal(sal1, sal2, sal3):
 def main():
     response = request.urlopen(URL)
     json_data = response.read()
-    data = json.loads(json_data)
-    print(data)
+    data = json.loads(json_data.decode("utf-8"))
     for item in data:
         avg = avg_sal(
             sal1=item['sal1'],
