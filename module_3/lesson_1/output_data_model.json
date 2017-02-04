@@ -1,0 +1,33 @@
+{
+    "customerEmail": {
+        "John Doe": "johndoe@gmail.com",
+        "Sally Sue": "s.sue@yahoo.com",
+        "Richard Smith": "richard.smith@bing.com"
+    },
+    "employeeSkills": {
+        "John Doe": [
+            "Networking",
+            "Programming",
+            "Project Management"
+        ],
+        "Sally Sue": [
+            "CTO",
+            "Security",
+            "DevOps"
+        ]
+    },
+    "numProducts": {
+        "tv": 100,
+        "computer": 50,
+        "watch": 30
+    },
+    "emailOrders": {
+        "johndoe@gmail.com": {
+            "tv": 1,
+            "watch": 2
+        },
+        "richard.smith@bing.com": {
+            "computer": 10
+        }
+    }
+}
