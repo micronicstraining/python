@@ -41,7 +41,7 @@ def main():
         'emailOrders': email_orders
     }
 
-    # Get JSON string.  Indent option makes it more readable.  
+    # Get JSON string.  Indent option makes it more readable.
     json_data = json.dumps(data_model, indent=4)
 
     print(json_data)
@@ -52,3 +52,19 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+# Note: What would happen if you try to convert a dictionary
+# to JSON if it has a value of a function?
+# Try this out:
+
+# ie:
+
+# def add_one(x):
+#     return x+1
+# >>> import json
+# >>> d = {'hi': add_one}
+# >>> json.dumps(d)
+
+
+# Read section 13.10 here http://www.diveintopython3.net/serializing.html 
