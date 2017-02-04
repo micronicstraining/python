@@ -63,3 +63,18 @@ def rot13_encode(data):
 # Create a script with above and launch it with:
 # python -m smtpd -n -c DebuggingServer localhost:1025
 # See if you can find SMTP packet sent
+
+# Create a class called Address
+# It hsould have a line 1, line 2, city, state, zip, country
+# over ride the __repr__ to print out a well formatted address.
+#
+# Create a class call Customer
+# It should have a first name, last name, email and address object
+#
+# SKIP NEXT ONE:
+# Create a product class.  It hsould have an item name and cost.
+# Override the __add__ method so products can be added to each other
+#
+#
+# - closure, lambda review
+#
