@@ -26,6 +26,12 @@ rank = ET.SubElement(country, 'rank')
 year = ET.SubElement(country, 'year')
 print(ET.dump(data))
 
+# def xml_dumps(self):
+#      pass
+# <point>
+#   <x>5</x>
+#   <y>15</y>
+# </point>
 # Will go over following details if asked
 # - XML in depth overview
 # - XSLT overview, XPATH overview
