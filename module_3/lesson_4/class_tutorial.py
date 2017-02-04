@@ -1,7 +1,7 @@
 # - https://github.com/Akuli/python-tutorial/blob/master/basics/classes.md tutorial basic review
 # - string repr
 # - monkey patch
-# 	- iterators
+# 	- iterators / generators 
 # 	- context manager
 #     - functor
 #     - abstract base class

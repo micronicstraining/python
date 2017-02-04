@@ -53,6 +53,14 @@ def rot13_encode(data):
 # >>> list(map(bin, map(ord, 'Hello')))
 # ['0b1001000', '0b1100101', '0b1101100', '0b1101100', '0b1101111']
 
+# datetime practice
+# from datetime import datetime
+# how can you get current time?
+
+# how can you calculate number of days since your birthday?
+
+# hackerrank datetime problems
+
 # In order to send email you can use the send-mail transfer protocol (SMTP)
 # there is a built-in library for this
 # What do you think the following code does:
@@ -64,6 +72,18 @@ def rot13_encode(data):
 # python -m smtpd -n -c DebuggingServer localhost:1025
 # See if you can find SMTP packet sent
 
+# syslogd is
+# a socket is a TCP or UDP connection to an ip address/port which lets you
+# send and recieve data
+# what do ou think the following code does?
+# >>> from socket import *
+# >>> syslogd = socket(AF_INET, SOCK_DGRAM)
+# >>> syslogd.bind(('localhost', 514))
+# >>> while True:
+# ...     message, source = syslogd.recvfrom(2048)
+# ...     print "[%s] %s" % (source[0], message)
+#
+
 # Create a class called Address
 # It hsould have a line 1, line 2, city, state, zip, country
 # over ride the __repr__ to print out a well formatted address.
@@ -74,7 +94,6 @@ def rot13_encode(data):
 # SKIP NEXT ONE:
 # Create a product class.  It hsould have an item name and cost.
 # Override the __add__ method so products can be added to each other
-#
 #
 # - closure, lambda review
 #
