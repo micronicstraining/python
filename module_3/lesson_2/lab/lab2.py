@@ -3,7 +3,9 @@
 # Create a Person class
 # It should have a first name, last name and age.
 # It should recieve these values through the constuctor.
+#   def __init__(self, first_name, last_name, age):
 # It it should have a method called pickle with no inputs and no outputs
+#   def pickle(self):
 # That method should pickle that instance and store it in a file.
 # The file name should have the following format:
 # Person.102342342.pickle
@@ -19,7 +21,15 @@ import pickle
 
 
 class Person():
-    pass
+    def __init__(self, first, last, age):
+        self.first = first
+        self.last = last
+        self.age = age
+        self.file_name = Person.__name__ + '.' + str(id(self)) + '.pickle'
+
+    def pickle(self):
+        with open(self.file_name, mode="wb") as f:
+            d = pickle.dump(self, f)
 
 
 def main():

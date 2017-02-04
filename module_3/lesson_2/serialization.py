@@ -4,7 +4,7 @@ import marshal
 
 # Say we want to convert more complicated objects to data
 # This process is known as serialization
-# However, when we serialize to JSON we lose data back in certain cases.
+# You can't encode certain things in Python into JSON.
 # That is why sometimes its better ot use Pickling
 
 # Read through https://docs.python.org/2/library/pickle.html#what-can-be-pickled-and-unpickled
@@ -48,7 +48,7 @@ print(d_serialized)
 
 # As you can see, pickling is actually a protocol based around
 # storing and reading python byte-code.  If you think about it, how else
-# woudl you represent python objects?
+# would you represent python objects?
 
 # Write the d_serialized data to FILE_NAME
 FILE_NAME = 'serialization.pickle'

@@ -8,10 +8,57 @@
 import pickle
 
 # replace data with data_model variable
-data = None
+# Customer name and e-mail address
+cust_emails = {
+    'John Doe': 'johndoe@gmail.com',
+    'Sally Sue': 's.sue@yahoo.com',
+    'Richard Smith': 'richard.smith@bing.com'
+}
 
-file_name = 'lesson2.lab1.pickle'
+# Employee name to skills
+employee_skills = {
+    'John Doe': ['Networking', 'Programming', 'Project Management'],
+    'Sally Sue': ['CTO', 'Security', 'DevOps']
+}
 
+# Product type and number available
+num_products = {
+    'tv': 100,
+    'computer': 50,
+    'watch': 30
+}
+
+# Email to product orders
+email_orders = {
+    'johndoe@gmail.com': {'tv': 1, 'watch': 2},
+    'richard.smith@bing.com': {'computer': 10}
+}
+
+assert email_orders['johndoe@gmail.com']['tv'] == 1
+
+data = {
+    'customerEmail': cust_emails,
+    'employeeSkills': employee_skills,
+    'numProducts': num_products,
+    'emailOrders': email_orders
+}
+
+FILE_NAME = 'lesson2.lab1.pickle'
+
+# Serialize the data using pickle binary format
+with open(FILE_NAME, mode="wb") as f:
+    pickle.dump(data, f)
+
+input('')
+
+# Deserialize (unpickle) data from file
+unpickled_data = None
+with open(FILE_NAME, mode="rb") as f:
+    unpickled_data = pickle.load(f)
+
+# print(unpickled_data)
+if 'customerEmail' in unpickled_data:
+    print(data['customerEmail'].keys())
 
 # for example the following should work
-print(data['customerEmail'].keys())
+# print(data['customerEmail'].keys())

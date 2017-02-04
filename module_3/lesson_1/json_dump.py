@@ -34,6 +34,8 @@ def main():
         'richard.smith@bing.com': {'computer': 10}
     }
 
+    assert email_orders['johndoe@gmail.com']['tv'] == 1
+
     data_model = {
         'customerEmail': cust_emails,
         'employeeSkills': employee_skills,

@@ -5,6 +5,7 @@
 import pickle
 import marshal, types
 
+
 FILE_NAME = 'serialization.pickle'
 
 d = pickle.load(open(FILE_NAME, mode="rb"))

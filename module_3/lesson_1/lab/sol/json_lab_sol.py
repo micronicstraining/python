@@ -7,18 +7,24 @@ Average the results per city and print them out.
 """
 import json
 from urllib import request
+import my_module
 
 # Get JSON contents using urllib (see url_lib_ex.py)
 URL = 'http://mysafeinfo.com/api/data?list=us_bestitjobcities2015&format=json'
 
 
 def avg_sal(sal1, sal2, sal3):
+
+    if sal1 < 90000:
+        raise ValueError('Divide by Zero')
+
     return (sal1+sal2+sal3)/3
 
 
 def main():
     response = request.urlopen(URL)
     json_data = response.read()
+    # load array
     data = json.loads(json_data.decode("utf-8"))
     for item in data:
         avg = avg_sal(

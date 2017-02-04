@@ -2,8 +2,8 @@
 """
 This programs outputs the HTML contents of python.org.
 
-This is basically the HTML data that your browser recieves from an HTTP request.
-HTML is the data encapsulated by the application layer (HTTP protocol).
+This is basically the HTML data that your browser receives from an HTTP request.
+HTML/JSON/XML is the data encapsulated by the application layer (HTTP protocol).
 It is used for structuring web content presentation.
 """
 import urllib.request

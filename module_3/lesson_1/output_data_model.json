@@ -17,14 +17,14 @@
         ]
     },
     "numProducts": {
-        "tv": 100,
+        "watch": 30,
         "computer": 50,
-        "watch": 30
+        "tv": 100
     },
     "emailOrders": {
         "johndoe@gmail.com": {
-            "tv": 1,
-            "watch": 2
+            "watch": 2,
+            "tv": 1
         },
         "richard.smith@bing.com": {
             "computer": 10
