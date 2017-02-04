@@ -13,13 +13,3 @@
 #         * https://www.youtube.com/watch?v=W71BTkUbdqE google single repo code wow 
 #         * http://sdtimes.com/guest-view-hidden-hazards-squashing-git-commits/ 
 #         * https://guides.github.com/introduction/flow/ 
-
-
-# get all commands
-# ICMP echo example
-#
-# sr1
-# Welcome to Scapy (2.2.0)
-# >>> sr1(IP(dst='8.8.8.8')/UDP()/DNS(rd=1,qd=DNSQR(qname='packetlife.net')))
-# Begin emission:
-# Finished to send 1 packets.
